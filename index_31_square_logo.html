@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heulix - Process Improvement Consulting | Adelaide</title>
+  <link rel="canonical" href="https://heulix.com.au/" />
+  <meta property="og:title" content="Heulix - Process Improvement Consulting Adelaide" />
+  <meta property="og:description" content="Heulix is a process improvement consulting firm based in Adelaide, Australia, helping organisations remove friction so their people can do their best work." />
+  <meta property="og:url" content="https://heulix.com.au/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Heulix" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Heulix - Process Improvement Consulting Adelaide" />
+  <meta name="twitter:description" content="Process improvement consulting - removing friction so your people can focus on the work that matters most." />
+  <meta name="description" content="Heulix is a process improvement consulting firm based in Adelaide, Australia, helping organisations remove friction so their people can do their best work." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 497 497' xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:3'%3E%3Cpath d='M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z' fill='none'/%3E%3CclipPath id='c'%3E%3Cpath d='M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Cpath d='M41.531,-47.282L41.531,543.345' fill='none' stroke='rgb(41,72,106)' stroke-width='83.33'/%3E%3Cpath d='M454.531,-47.282L454.531,543.345' fill='none' stroke='rgb(41,72,106)' stroke-width='83.33'/%3E%3Cpath d='M154.531,-47.282L154.531,100.375C154.531,152.695 206.841,206.836 248.031,248.031C289.222,289.227 341.531,343.368 341.531,395.688L341.531,543.345' fill='none' stroke='rgb(41,72,106)' stroke-width='83.33'/%3E%3Cpath d='M341.531,-47.282L341.531,100.375C341.531,152.695 289.222,206.836 248.031,248.031C206.841,289.227 154.531,343.368 154.531,395.688L154.531,543.345' fill='none' stroke='rgb(44,95,81)' stroke-width='83.33'/%3E%3Cellipse cx='248.031' cy='248.031' rx='44.5' ry='44.506' fill='rgb(114,190,170)'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="website_hero.jpg" />
+  <style>
+    :root {
+      --navy:       #274769;
+      --navy-dark:  #111e2e;
+      --forest:     #266051;
+      --mint:       #6ABFAA;
+      --mint-light: #a8d9ce;
+      --cream:      #f5f2ee;
+      --text:       #1a2a35;
+      --text-muted: #5a6e78;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { scroll-behavior: smooth; width: 100%; max-width: 100%; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 70vh;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      width: 100%;
+    }
+
+    .hero-left {
+      background: var(--navy-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 52px 80px 52px 6vw;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-left::after {
+      content: '';
+      position: absolute;
+      right: -320px;
+      top: 0;
+      bottom: 0;
+      width: 320px;
+      background: linear-gradient(to right, var(--navy-dark), transparent);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.1s;
+    }
+
+    .logo-wrap svg {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .logo-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+
+    .hero-tagline {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-weight: 600;
+      line-height: 1.12;
+      color: var(--cream);
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.3s;
+    }
+
+    .hero-tagline .accent {
+      color: var(--mint);
+      font-weight: 300;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--mint-light);
+      max-width: 380px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.5s;
+    }
+
+    .hero-cta {
+      margin-top: 28px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.7s;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1.5px solid var(--mint);
+      color: var(--mint);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn:hover {
+      background: var(--mint);
+      color: var(--navy);
+    }
+
+    .hero-right {
+      display: flex;
+      align-items: stretch;
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .hero-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 20% center;
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-right::before,
+    .hero-right::after { display: none; }
+
+    /* ── SHARED ── */
+    section { padding: 100px 72px; }
+
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.18;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.82;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .about-text p:last-child { margin-bottom: 0; }
+    .about-text strong { color: var(--text); font-weight: 500; }
+
+    .value-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 28px 32px;
+      background: white;
+      border-left: 3px solid var(--mint);
+    }
+
+    .value-icon {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+      color: var(--forest);
+      margin-top: 2px;
+    }
+
+    .value-item h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .value-item p {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--navy-dark); }
+    .services .section-label { color: var(--mint); }
+    .services .section-title { color: var(--cream); }
+
+    .services-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--mint-light);
+      max-width: 560px;
+      margin-bottom: 64px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .service-card {
+      background: rgba(255,255,255,0.04);
+      padding: 48px 40px;
+      border-top: 2px solid rgba(106,191,170,0.3);
+      transition: background 0.3s;
+    }
+
+    .service-card:hover { background: rgba(255,255,255,0.08); }
+
+    .service-number {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: rgba(106,191,170,0.2);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .service-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.78;
+      color: var(--mint-light);
+    }
+
+    /* ── WHO WE WORK WITH ── */
+    .clients {
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .clients-text p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.82;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .sector-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .sector-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .sector-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+      flex-shrink: 0;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+      background: var(--forest);
+      text-align: center;
+      padding: 120px 72px;
+    }
+
+    .contact .section-label { color: var(--mint-light); }
+    .contact .section-title { color: var(--cream); margin-bottom: 16px; }
+
+    .contact-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(245,242,238,0.7);
+      margin-bottom: 48px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--cream);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(106,191,170,0.5);
+      padding-bottom: 4px;
+      transition: border-color 0.25s, color 0.25s;
+    }
+
+    .contact-email:hover {
+      color: var(--mint);
+      border-color: var(--mint);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy-dark);
+      padding: 32px 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-logo svg { width: 26px; height: 26px; }
+
+    .footer-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream);
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: rgba(245,242,238,0.4);
+    }
+
+    .linkedin-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(245,242,238,0.5);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 300;
+      transition: color 0.2s;
+    }
+
+    .linkedin-link:hover { color: var(--mint); }
+
+    .footer-divider {
+      width: 1px;
+      height: 32px;
+      background: rgba(245,242,238,0.2);
+      margin: 0 16px;
+    }
+
+    .linkedin-link svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    /* ── CREDENTIALS BAR ── */
+    .credentials {
+      background: var(--navy-dark);
+      padding: 56px 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+
+    .cred-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    .cred-item:hover { opacity: 1; }
+
+    .cred-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(106,191,170,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mint);
+    }
+
+    .cred-icon-wrap svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .cred-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mint-light);
+      text-align: center;
+      line-height: 1.5;
+      max-width: 120px;
+    }
+
+    .cred-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(106,191,170,0.2);
+    }
+
+    @media (max-width: 900px) {
+      .credentials { gap: 40px; padding: 48px 40px; }
+      .cred-divider { display: none; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+
+      .hero-left {
+        padding: 64px 40px;
+        min-height: 100vh;
+      }
+
+      .hero-left::after { display: none; }
+      .hero-right { display: none; }
+
+      section { padding: 72px 40px; }
+
+      .about,
+      .clients { grid-template-columns: 1fr; gap: 48px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 32px 40px;
+      }
+
+      .footer-right { flex-direction: column; gap: 12px; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLLE2DBQKS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DLLE2DBQKS');
+  </script>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="logo-wrap">
+        <svg viewBox="0 0 497 497" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:3;">
+          <path d="M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z" style="fill:none;"/>
+          <clipPath id="hc"><path d="M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z"/></clipPath>
+          <g clip-path="url(#hc)">
+            <path d="M41.531,-47.282L41.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+            <path d="M454.531,-47.282L454.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+            <path d="M154.531,-47.282L154.531,100.375C154.531,152.695 206.841,206.836 248.031,248.031C289.222,289.227 341.531,343.368 341.531,395.688L341.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+            <path d="M341.531,-47.282L341.531,100.375C341.531,152.695 289.222,206.836 248.031,248.031C206.841,289.227 154.531,343.368 154.531,395.688L154.531,543.345" style="fill:none;stroke:rgb(44,95,81);stroke-width:83.33px;"/>
+            <ellipse cx="248.031" cy="248.031" rx="44.5" ry="44.506" style="fill:rgb(114,190,170);"/>
+          </g>
+        </svg>
+        <span class="logo-name">Heulix</span>
+      </div>
+
+      <h1 class="hero-tagline">
+        Better processes.<br/><span class="accent">Empowered</span><br/>people.
+      </h1>
+
+      <p class="hero-sub">
+        Process improvement consulting - removing friction so your people can focus on the work that matters most.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img
+        class="hero-graphic"
+        src="website_hero.jpg"
+        alt="Digital process map"
+        title="Digital process map"
+      />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-text reveal">
+      <p class="section-label">About</p>
+      <h2 class="section-title">Work that flows.<br/>People who thrive.</h2>
+      <p>
+        When processes work the way they should, something remarkable happens - people stop firefighting and start doing the work they're actually good at.
+      </p>
+      <p>
+        Heulix works with organisations to understand how work <strong>really</strong> happens, remove the friction that gets in the way, and build the kind of clarity that lets teams move with confidence.
+      </p>
+      <p>
+        Based in Adelaide. Working across Australia.
+      </p>
+    </div>
+
+    <div class="value-list reveal">
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/>
+        </svg>
+        <div>
+          <h4>People-first improvement</h4>
+          <p>Process change only sticks when the people doing the work are part of designing it. Every engagement starts with listening.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+        </svg>
+        <div>
+          <h4>Analytical and strategic depth</h4>
+          <p>Rigorous analysis combined with strategic thinking - understanding both the operational detail and the bigger picture.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <div>
+          <h4>Change that lasts</h4>
+          <p>No off-the-shelf frameworks. Practical solutions built for your context, your team, and your constraints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <p class="section-label reveal">What we do</p>
+    <h2 class="section-title reveal">Built for complexity.<br/>Designed for clarity.</h2>
+    <p class="services-intro reveal">
+      Every engagement is tailored to the organisation - rigorous analysis, practical solutions, and the support to see it through.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <h3>Process Mapping &amp; Analysis</h3>
+        <p>Understanding how work actually flows - not how it's supposed to - and surfacing the friction points that cost your people time, energy, and focus.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <h3>Improvement Design</h3>
+        <p>Co-designing solutions with the people doing the work. Practical, implementable, and built to outlast the engagement.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <h3>Change &amp; Implementation</h3>
+        <p>Supporting organisations through the transition - from pilot to scale, with the stakeholder engagement and measurement to make it stick.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE WORK WITH -->
+  <section class="clients">
+    <div class="clients-text reveal">
+      <p class="section-label">Who we work with</p>
+      <h2 class="section-title">Sector expertise.<br/>Broad application.</h2>
+      <p>
+        Heulix has deep roots in healthcare - understanding the unique pressures of clinical environments, patient flow, and the human cost of processes that don't work.
+      </p>
+      <p>
+        That same rigour applies wherever teams are doing complex, high-stakes work and need their systems to keep up.
+      </p>
+    </div>
+
+    <div class="sector-list reveal">
+      <div class="sector-item"><div class="sector-dot"></div>Government &amp; public sector</div>
+      <div class="sector-item"><div class="sector-dot"></div>Healthcare &amp; community services</div>
+      <div class="sector-item"><div class="sector-dot"></div>Mid-market &amp; corporate</div>
+      <div class="sector-item"><div class="sector-dot"></div>SMEs seeking operational clarity</div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS BAR -->
+  <div class="credentials">
+    <div class="cred-item reveal">
+      <div class="cred-icon-wrap">
+        <!-- X-ray / radiography icon: chest film with ribcage suggestion -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+          <!-- film sheet -->
+          <rect x="4" y="1.5" width="16" height="21" rx="1" stroke-linecap="round"/>
+          <!-- notches top -->
+          <path stroke-linecap="round" d="M8 1.5v2M16 1.5v2"/>
+          <!-- notches bottom -->
+          <path stroke-linecap="round" d="M8 20.5v2M16 20.5v2"/>
+          <!-- chest / ribcage outline -->
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5C7.5 8.5 7 10 7.5 11.5"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 7.5C16.5 8.5 17 10 16.5 11.5"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 10.5C7.5 11.5 7 13 7.5 14.5"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5C16.5 11.5 17 13 16.5 14.5"/>
+        </svg>
+      </div>
+      <span class="cred-label">Experienced Health Professional</span>
+    </div>
+    <div class="cred-divider"></div>
+    <div class="cred-item reveal">
+      <div class="cred-icon-wrap">
+        <!-- MBA / graduation icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+        </svg>
+      </div>
+      <span class="cred-label">Master of Business Administration</span>
+    </div>
+    <div class="cred-divider"></div>
+    <div class="cred-item reveal">
+      <div class="cred-icon-wrap">
+        <!-- Lean Six Sigma / process icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+        </svg>
+      </div>
+      <span class="cred-label">Lean Six Sigma Black Belt</span>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="section-label reveal">Get in touch</p>
+    <h2 class="section-title reveal">Let's talk about<br/>your organisation.</h2>
+    <p class="contact-sub reveal">No obligation - just a conversation about where things could work better.</p>
+    <a href="mailto:hello@heulix.com.au" class="contact-email reveal">hello@heulix.com.au</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <svg viewBox="0 0 497 497" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:3;width:48px;height:48px;flex-shrink:0;">
+        <path d="M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z" style="fill:none;"/>
+        <clipPath id="hc3"><path d="M496.063,49.606L496.063,446.457C496.063,473.835 473.835,496.063 446.457,496.063L49.606,496.063C22.228,496.063 0,473.835 0,446.457L0,49.606C0,22.228 22.228,-0 49.606,-0L446.457,-0C473.835,-0 496.063,22.228 496.063,49.606Z"/></clipPath>
+        <g clip-path="url(#hc3)">
+          <path d="M41.531,-47.282L41.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+          <path d="M454.531,-47.282L454.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+          <path d="M154.531,-47.282L154.531,100.375C154.531,152.695 206.841,206.836 248.031,248.031C289.222,289.227 341.531,343.368 341.531,395.688L341.531,543.345" style="fill:none;stroke:rgb(41,72,106);stroke-width:83.33px;"/>
+          <path d="M341.531,-47.282L341.531,100.375C341.531,152.695 289.222,206.836 248.031,248.031C206.841,289.227 154.531,343.368 154.531,395.688L154.531,543.345" style="fill:none;stroke:rgb(44,95,81);stroke-width:83.33px;"/>
+          <ellipse cx="248.031" cy="248.031" rx="44.5" ry="44.506" style="fill:rgb(114,190,170);"/>
+        </g>
+      </svg>
+      <div class="footer-divider"></div>
+      <img src="website_brandsa_logo.png" alt="Brand South Australia logo" title="Heulix is proudly South Australian" style="height:48px;width:auto;opacity:1;" />
+    </div>
+    <div class="footer-right">
+      <a href="https://www.linkedin.com/in/rdavids/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <p>© 2025 Heulix. Adelaide, South Australia.</p>
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), 80 * i);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
